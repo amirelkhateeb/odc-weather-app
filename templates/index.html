@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weatherio Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <h1>
+          Weather App
+          <img
+            src="./static/images/cloudy.png"
+            alt="Cloudy Icon"
+            style="width: 60px; horizontal-align: middle"
+          />
+        </h1>
+        <form id="weather-form">
+          <input
+            type="text"
+            id="city"
+            placeholder="Enter city name"
+            required
+            value="{{ last_searched_city }}"
+          />
+          <button type="submit">Search</button>
+        </form>
+        <button id="view-cities-btn">View Cities</button>
+      </header>
+      <main>
+        <div class="weather-info">
+          <div class="weather-icon">
+            <img
+              id="weather-image"
+              src="/static/images/clear.png"
+              alt="Weather Icon"
+            />
+          </div>
+          <div class="weather-details">
+            <h2 id="weather-location">Location</h2>
+            <p id="weather-temperature">Temperature: --°C</p>
+            <p id="weather-description">Condition: --</p>
+          </div>
+        </div>
+
+        <!-- Display Cities List -->
+        <div id="cities-list-container">
+          <h2>Previously Searched Cities</h2>
+          <ul id="cities-list"></ul>
+        </div>
+      </main>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

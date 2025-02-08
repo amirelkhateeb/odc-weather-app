@@ -1,0 +1,150 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-app {
+  width: 80%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header form {
+  display: flex;
+  justify-content: center;
+}
+
+header input {
+  width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+header button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.weather-icon img {
+  width: 150px;
+  height: 150px;
+}
+
+.weather-details {
+  margin-left: 20px;
+}
+
+.weather-details h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.weather-details p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+/* Add styles for the View Cities section */
+#cities-list-container {
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+#cities-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cities-list li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+#view-cities-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #28a745;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#view-cities-btn:hover {
+  background: #218838;
+}
+
+#cities-list-container {
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+#cities-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cities-list li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
