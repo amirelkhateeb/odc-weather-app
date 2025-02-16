@@ -10,7 +10,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 
-                git credentialsId: 'githubsecrettoken', url: 'https://github.com/amirelkhateeb/weather-app.git', branch: 'main'
+                git credentialsId: 'github-token', url: 'https://github.com/amirelkhateeb/weather-app.git', branch: 'main'
             }
         }
 
