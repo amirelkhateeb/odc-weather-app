@@ -9,17 +9,15 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                // استخدم الـ credentialsId الصحيح
-                git credentialsId: 'secret-github', url: 'https://github.com/amirelkhateeb/weather-app.git', branch: 'main'
+                
+                git credentialsId: 'githubsecrettoken', url: 'https://github.com/amirelkhateeb/weather-app.git', branch: 'main'
             }
         }
 
         stage('Build Docker Image') {
             steps {
                 script {
-                    // تحقق من وجود Docker
                     sh 'docker --version'
-                    // بناء الصورة
                     sh "docker build -t ${DOCKER_IMAGE} ."
                 }
             }
@@ -39,9 +37,7 @@ pipeline {
         stage('Deploy with Ansible') {
             steps {
                 script {
-                    // تحقق من وجود Ansible
                     sh 'ansible --version'
-                    // تأكد من وجود المفاتيح الخاصة
                     sh '''
                         cd ansible
                         if [ -f private_key_m01 ] && [ -f private_key_m02 ]; then
