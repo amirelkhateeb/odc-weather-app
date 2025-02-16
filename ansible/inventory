@@ -1,0 +1,4 @@
+[machines]
+192.168.56.15 ansible_user=vagrant ansible_private_key_file=/home/amir/Desktop/vagrantmachine/m01/virtualbox/private_key
+192.168.56.14 ansible_user=vagrant ansible_private_key_file=/home/amir/Desktop/vagrantmachine/m02/virtualbox/private_key
+
