@@ -53,12 +53,7 @@ Clone the project repository to your local machine:
 ``` bash ###git clone https://github.com/amirelkhateeb/weather-app.git
  cd weather-app ```
 
-2. Build and Push Docker Image
-If you need to build the Docker image locally before pushing to Docker Hub, use these commands:
 
-``` bash
-docker build -t weather-app .
-docker push weather-app:latest ```
 
 
 
