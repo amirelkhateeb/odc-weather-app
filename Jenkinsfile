@@ -40,9 +40,9 @@ pipeline {
                     sh 'ansible --version'
                     sh '''
                         cd ansible
-                        if [ -f private_key_m01 ] && [ -f private_key_m02 ]; then
-                            chmod 600 private_key_m01
-                            chmod 600 private_key_m02
+                        if [ -f private_key_ubuntu1 ] && [ -f private_key_ubuntu2 ]; then
+                            chmod 600 private_key_ubuntu1 
+                            chmod 600 private_key_ubuntu2
                             ansible-playbook -i inventory playbook.yml
                         else
                             echo "Error: Private keys not found!"
