@@ -1,4 +1,4 @@
 [machines]
-192.168.56.15 ansible_user=vagrant ansible_private_key_file=/var/lib/jenkins/workspace/weather-app/ansible/private_key_ubuntu1
-192.168.56.14 ansible_user=vagrant ansible_private_key_file=/var/lib/jenkins/workspace/weather-app/ansible/private_key_ubuntu2
+192.168.56.15 ansible_user=vagrant ansible_private_key_file=/var/lib/jenkins/workspace/weather-app-3/ansible/private_key_ubuntu1
+192.168.56.14 ansible_user=vagrant ansible_private_key_file=/var/lib/jenkins/workspace/weather-app-3/ansible/private_key_ubuntu2
 
