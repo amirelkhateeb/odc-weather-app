@@ -43,7 +43,7 @@ pipeline {
                         if [ -f private_key_ubuntu1 ] && [ -f private_key_ubuntu2 ]; then
                             chmod 600 private_key_ubuntu1 
                             chmod 600 private_key_ubuntu2
-                            ansible-playbook -i inventory playbook.yml
+                            ansible-playbook -i inventory playbook.yaml
                         else
                             echo "Error: Private keys not found!"
                             exit 1
