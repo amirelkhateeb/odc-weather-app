@@ -2,9 +2,11 @@
 
 🚀 **Project Overview**:  
 This project automates the deployment of a Python-based weather application using Docker 🐳, Ansible 🤖, GitHub 📦, Jenkins 🤖, and Vagrant 🖥️. The project started by developing the application, then Dockerizing it, uploading the Docker image to Docker Hub 🌐, and automating the deployment process across virtual machines using Ansible. Finally, we created a Jenkins pipeline 🔄 to fully automate the workflow.
-
+![217444103-cf0a4e10-b41a-4b03-9cb2-c063c8b99d21](https://github.com/user-attachments/assets/94887b96-1caa-494f-9da7-3942c6de4684)
+![217443148-60aa77bc-3a6c-45f1-a457-ba178b19a8dc](https://github.com/user-attachments/assets/304c5b89-6ac1-4c04-97f5-308fb306c329)
 ### What do we cover
-Build and deploy on tomcat server
+Build and
+ deploy on tomcat server
 Setup CI/CD with github, jenkins, Maven and tomcat
 
 - Setup Jenkins
@@ -13,6 +15,7 @@ Setup CI/CD with github, jenkins, Maven and tomcat
 - Integrate github, maven,server with jenkins
 Create a CI and CD job
 Test the deployment
+
 
 ## Technologies Used
 - **Python 🐍**: The core language used for the weather application.
