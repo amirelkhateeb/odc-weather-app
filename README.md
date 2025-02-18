@@ -45,21 +45,20 @@ A Jenkins pipeline was created to automate the entire workflow, which includes:
 - **Jenkins 🤖**: Continuous Integration/Continuous Deployment (CI/CD) tool for automating the workflow.
 - **GitHub 📦**: Version control system for managing project files.
 
-## Setup Instructions
+##Setup Instructions
 
 ### 1. Clone the Repository
 Clone the project repository to your local machine:
 
-```bash
-git clone https://github.com/amirelkhateeb/weather-app.git
-cd weather-app ```
+``` bash ###git clone https://github.com/amirelkhateeb/weather-app.git
+ cd weather-app ```
 
-### 2. Build and Push Docker Image
+2. Build and Push Docker Image
 If you need to build the Docker image locally before pushing to Docker Hub, use these commands:
 
-```bash
+``` bash
 docker build -t weather-app .
-docker push weather-app:latest
+docker push weather-app:latest ```
 
 
 
