@@ -50,8 +50,9 @@ A Jenkins pipeline was created to automate the entire workflow, which includes:
 ### 1. Clone the Repository
 Clone the project repository to your local machine:
 
-``` bash ###git clone https://github.com/amirelkhateeb/weather-app.git
- cd weather-app ```
+``` bash git clone https://github.com/amirelkhateeb/weather-app.git
+ cd weather-app
+```
 
 
 
