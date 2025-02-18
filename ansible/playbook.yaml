@@ -48,3 +48,15 @@
         name: vagrant
         groups: docker
         append: yes
+    - name: Pull Docker image
+      docker_image:
+          name: "amirelkhateeb/weather-app"  # أو أي صورة أنت عايزها
+          source: pull
+    - name: Run Docker container
+      docker_container:
+            name: "wehater_app_container"  
+            image: "amirelkhateeb/weather-app"  
+            state: started
+            restart_policy: always
+            published_ports:
+              - "5000:5000" 
